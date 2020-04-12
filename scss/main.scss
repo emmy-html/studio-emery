@@ -164,6 +164,11 @@ h2 {
   padding: 0px 5px;
 }
 
+.social-media i:hover {
+  color: $yellow;
+  transition: color 2s;
+}
+
 /* Tablet Styles */
 
 @media (min-width: 768px) {

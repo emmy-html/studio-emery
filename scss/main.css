@@ -127,6 +127,10 @@ h2 {
   font-weight: 400;
   padding: 0px 5px; }
 
+.social-media i:hover {
+  color: #f7df95;
+  transition: color 2s; }
+
 /* Tablet Styles */
 @media (min-width: 768px) {
   .content-wrapper {
