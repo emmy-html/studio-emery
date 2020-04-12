@@ -96,7 +96,7 @@ textarea {
 
 /* Main Styles */
 
-/* Colors & Fonts */
+/* SASS Colors & Fonts */
 
 $light-blue: #b1dcef;
 $yellow: #f7df95;
@@ -106,6 +106,8 @@ $teal: #b5dad3;
 $heading-font: 'Francois One', sans-serif;
 $body-font: 'Rajdhani', sans-serif;
 $body-size: 16px;
+
+/* Body */
 
 html {
   width: 100%;
@@ -165,6 +167,14 @@ h2 {
 /* Tablet Styles */
 
 @media (min-width: 768px) {
+  .content-wrapper {
+    margin: 8%;
+  }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1200px) {
   .content-wrapper {
     margin: 8%;
   }
