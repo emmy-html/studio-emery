@@ -99,9 +99,12 @@ textarea {
 /* SASS Colors & Fonts */
 
 $light-blue: #b1dcef;
-$yellow: #f7df95;
+$light-pink: #f2d7e3;
+$off-white: #faf5f0;
 $pink: #d58ab8;
 $teal: #b5dad3;
+$yellow: #f7df95;
+
 
 $heading-font: 'Francois One', sans-serif;
 $body-font: 'Rajdhani', sans-serif;
@@ -144,7 +147,7 @@ h2 {
 }
 
 .main-content {
-  background-color: white;
+  background-color: $off-white;
   border-bottom: 25px solid $yellow;
   border-radius: 30px 0px 30px 0px;
   color: $pink;
@@ -153,7 +156,59 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200px;
+  height: 250px;
+}
+
+/* Loading Dots */
+
+.loading-dots {
+  padding-bottom: 25px;
+}
+
+ .loading-dots span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .8em;
+  height: .8em;
+  margin: .19em;
+  background: $light-pink;
+  border-radius: .8em;
+  animation: loading 1.25s infinite alternate;
+}
+
+/* Dots Colors & Delays */
+.loading-dots span:nth-of-type(1) {
+  background: $yellow;
+  animation-delay: 0.1s;
+}
+.loading-dots span:nth-of-type(2) {
+  background: $pink;
+  animation-delay: 0.2s;
+}
+.loading-dots-dots span:nth-of-type(3) {
+  background: $yellow;
+  animation-delay: 0.4s;
+}
+.loading-dots span:nth-of-type(4) {
+  background: $light-blue;
+  animation-delay: 0.6s;
+}
+.loading-dots span:nth-of-type(5) {
+  background: $teal;
+  animation-delay: 0.8s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Social Media Icons */
