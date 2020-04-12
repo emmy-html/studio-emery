@@ -162,6 +162,16 @@ h2 {
   padding: 0px 5px;
 }
 
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    margin: 8%;
+  }
+  .main-content {
+    width: 100%;
+  }
+}
 
 /* ==========================================================================
    Helper classes
