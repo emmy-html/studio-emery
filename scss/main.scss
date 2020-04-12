@@ -96,38 +96,70 @@ textarea {
 
 /* Main Styles */
 
+/* Colors & Fonts */
+
+$light-blue: #b1dcef;
+$yellow: #f7df95;
+$pink: #d58ab8;
+$teal: #b5dad3;
+
+$heading-font: 'Francois One', sans-serif;
+$body-font: 'Rajdhani', sans-serif;
+$body-size: 16px;
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: url('../img/bg.png') no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #b1dcef;
-  font-family: 'Rajdhani', sans-serif;
+  background-color: $light-blue;
+  font-family: $heading-font;
+  font-size: $body-size;
 }
 
 h1 {
-  font-family: 'Francois One', sans-serif;
+  color: $light-blue;
+  font-family: $heading-font;
+  text-align: center;
+  line-height: 1.75rem;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $body-font;
   font-weight: 400;
+  line-height: 1.75rem;
+  text-transform: uppercase;
 }
 
 .content-wrapper {
-  margin: 0px 60px;
+  margin: 6.4%;
 }
 
 .main-content {
+  background-color: white;
+  border-bottom: 25px solid $yellow;
+  border-radius: 30px 0px 30px 0px;
+  color: $pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 200px;
-  background-color: white;
-  margin-top: 60px;
-  border-bottom: 25px solid #f7df95;
+}
+
+/* Social Media Icons */
+
+.social-media i {
+  color: $teal;
+  font-weight: 400;
+  padding: 0px 5px;
 }
 
 
